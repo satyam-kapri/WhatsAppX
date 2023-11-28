@@ -1,4 +1,4 @@
-export const host = "http://192.168.141.45:5000";
+export const host = "https://whatsappx-server.onrender.com";
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
 export const logoutRoute = `${host}/api/auth/logout`;
