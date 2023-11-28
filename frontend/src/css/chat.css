@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    /* --themecolor:linear-gradient(to right,rgba(255, 44, 44, 1),rgba(227, 10, 160, 1)); */
+    /* --themecolor:linear-gradient(to right,rgb(77 102 255),rgb(10 187 227)); */
+    --themecolor:linear-gradient(145deg,rgb(195 240 78),rgb(0 220 159));
+    --themeshadow:rgb(231, 227, 254) 0px 48px 100px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin:0;padding:0;
+}
+
+.container{
+    /* background:#ecfcf9; */
+    height: 97vh;
+    box-sizing: border-box;
+    width: 91vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 15px; */
+    /* padding-top: 3rem; */
+    border-radius: 20px;
+    z-index: 1;
+    margin-right: 20px;
+    /* border: 1px solid #cfcfcf; */
+    /* margin-left: -2rem; */
+}
+@media all and (max-width:400px) {
+    .container{
+        min-width: 95%;
+    }
+}

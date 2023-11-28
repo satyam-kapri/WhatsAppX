@@ -1,0 +1,118 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.fakebody{
+    background:#FBFAFA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+.form-container{
+ background:white;
+ border-radius: 25px;
+ width: max(300px,30%);
+ height: 72vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.form-container form{
+    height: 80%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    flex-direction: column;
+    width: 74%;
+}
+.form-container .loginsubmitbtn{
+    background: var(--themecolor);
+    background: white;
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border: 1px solid rgb(24, 221, 24);
+    color: rgb(24, 221, 24);
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    position: relative;
+}
+.form-container .loginsubmitbtn::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:var(--themecolor);
+    transition: all .35s;
+    border-radius: 6px;
+}
+.form-container .loginsubmitbtn:hover >span{
+color: white;
+z-index: 2;position: relative;
+}
+.form-container .loginsubmitbtn:hover::before{
+    width: 100%;
+}
+
+
+.fakebody >.logo-heading{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background:url('../assets/image\ 11.png'), black;
+background-size: contain;
+/* border-radius: 47% 38% 76% 23% / 0% 41% 59% 0%; */
+width: 56%;
+height: 100vh;
+clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+.fakebody >.logo-heading span{
+    color: white;
+    font-size: 1.3rem;
+}
+.registerlink{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+}
+.form-container .form-heading{
+    font-size: 2rem;
+}
+.loginlink{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+}
+@media  all and (max-width:400px) {
+    .form-container{
+        background: #ffffff70;
+        backdrop-filter: blur(1px);
+        color:white;
+        border:1px solid gray;
+        margin: auto;
+    }
+    .fakebody >.logo-heading{
+        position: absolute;
+    }
+    .fakebody >.logo-heading span{
+        display: none;
+    }
+    .fakebody >.logo-heading img{
+    display: none;
+    }
+    .loginsubmitbtn{
+        background:#ffffffab;
+    }
+    
+}

@@ -1,0 +1,75 @@
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    background: #202020;
+    padding: 10px;
+    border-radius: 40px;
+    width: 90%;
+    height: 2.5rem;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+}
+.button-container{
+    border-radius: 50%;
+    background:#1ABB16;
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+@media screen and (max-width:400px){
+    .send-btn{
+        width: 50px;
+    }
+    .button-container{
+        width: 50px;
+    }
+    
+}
+.button-container svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+}
+.input-container{
+    width: 97%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+.input-container input{
+    background: transparent;
+    width: 80%;
+    height: 3rem;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    color:white
+}
+.send-btn{
+
+height: 45px;
+width: 45px;
+ background:#1ABB16;
+ border-radius: 50%;
+ border: none;
+ /* box-shadow:var(--themeshadow); */
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.send-btn svg path{
+    fill: white;
+}
+aside.EmojiPickerReact.epr-main {
+    
+    position: absolute;
+    top: 14rem;
+    
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}

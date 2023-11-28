@@ -1,0 +1,137 @@
+
+.contacts-container{
+    height: 100%;
+    flex-basis: 42%;
+    min-width: 340px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.contacts-heading-wrapper{
+    background: white;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 72px;
+}
+.contacts-heading{
+    /* background:#212121; */
+    /* background: rgb(33 33 33); */
+    border-radius:6px;
+    /* box-shadow: 7px 5px 6px rgba(0, 0, 0, 0.25) ; */
+    color: black;
+    display: flex;
+    margin-left: 2rem;
+    justify-content: center;
+    font-size: 1rem;
+
+}
+.contacts-search{
+    color: black;
+    background: #f0f2f0;
+    margin: 0px 15px;
+    border-radius: 17px;
+    height: 52px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.contacts-search input{
+    width: 60%;height: 96%;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+.contacts-search input::placeholder{
+    color: black;
+}
+.contacts{
+    /* background:#212121; */
+    /* background: rgb(33 33 33); */
+    border-radius:20px;grid-column-end:span 2;
+    /* box-shadow: 7px 5px 6px rgba(0, 0, 0, 0.25) ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    overflow: auto;
+    background: white;
+}
+.contacts::-webkit-scrollbar{
+    width: 3px;
+}
+.contacts::-webkit-scrollbar-thumb{
+    background: #00db00;
+}
+.contacts-notfound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+.contact{
+display: flex;
+align-items: center;
+width: 94%;
+height: 70px;
+min-height:4rem;
+/* background: #393E46; */
+/* background:#DAE4F9; */
+border-radius: 8px;
+margin: 8px 0 0 0;
+color: black;
+position: relative;
+}
+.contact:first-child{
+    margin: 20px 0 0 0;
+}
+.contacts-avatar{
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 12px;
+}
+.contacts-avatar img{
+    width: 50px;
+    height: 50px;
+}
+.contacts-username{
+    
+    font-weight: 400;
+    font-size: 1rem;
+}
+.selected{  
+    /* background: url('../assets/image\ 11.png'),linear-gradient(45deg,  rgb(0 94 79),rgb(22 184 158)); */
+    background: url('../assets/image\ 14.png'),linear-gradient(45deg,  rgba(2, 94, 0, 1),rgba(26, 184, 22, 1));
+     color:white;
+     background-size: cover;
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.selected span{
+    color: white !important;
+}
+.selected .recent-message{
+    color:white !important;
+}
+@media screen and (max-width:400px){
+    .contacts-container{
+    margin-left: 10px;
+    margin-right: 0;
+    min-width: 100%;
+    }
+    .contacts{
+        height:81%;
+    }
+}
