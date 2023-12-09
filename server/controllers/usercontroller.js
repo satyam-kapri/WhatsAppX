@@ -23,7 +23,7 @@ module.exports.login = async (req, res, next) => {
     const token=jwt.sign({userid:user._id},process.env.JWT_SECRET);
     res.cookie('token',token,{httpOnly:true,secure:true,
       expires: new Date(Date.now() + 900000000),
-      sameSite: 'None'});
+      });
    
    
    return res.json({ status: true});
@@ -49,9 +49,9 @@ module.exports.register = async (req, res, next) => {
       password: hashedPassword,
     });
     const token=jwt.sign({userid:user._id},process.env.JWT_SECRET);
-    res.cookie('token',token,{httpOnly:true,secure:false,
+    res.cookie('token',token,{httpOnly:true,secure:true,
       expires: new Date(Date.now() + 900000000),
-      sameSite: 'None'});
+      });
     
     
     return res.json({ status: true });
