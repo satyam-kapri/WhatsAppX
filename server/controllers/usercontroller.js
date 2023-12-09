@@ -51,7 +51,7 @@ module.exports.register = async (req, res, next) => {
     const token=jwt.sign({userid:user._id},process.env.JWT_SECRET);
     res.cookie('token',token,{httpOnly:true,secure:false,
       expires: new Date(Date.now() + 900000000),
-      sameSite: 'strict'});
+      sameSite: 'None'});
     
     
     return res.json({ status: true });
