@@ -76,8 +76,8 @@ export default function Register({setregisteropen}) {
 
   return (
     <>
-      
-      <div className="form-container" style={{height:'89vh'}}>
+      <div className="form-outer">
+      <div className="form-container registerform" >
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="form-heading">
             Register
@@ -93,7 +93,7 @@ export default function Register({setregisteropen}) {
           </span>
         </form>
         </div>
-    
+        </div>
       <ToastContainer />
     </>
   );

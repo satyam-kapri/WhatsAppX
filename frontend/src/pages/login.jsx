@@ -7,7 +7,8 @@ import { checkloggedInorNot, loginRoute } from "../utils/apiroutes";
 import "../css/login.css";
 import Register from "./register";
 import TextField from '@mui/material/TextField';
-import loginlogo from '../assets/loginlogo.png';
+import loginlogo from '../assets/whatsapp logo.png';
+import whatsapplogo from '../assets/Group 16.svg';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -85,7 +86,7 @@ export default function Login() {
         );
         navigate("/");
       }
-    }catch(e){console.log(e);toast.error("Server error please try again!",toastOptions);}
+    }catch(e){console.log(e);toast.error("Server error please try again! ",toastOptions);}
   };
   }
    
@@ -96,12 +97,13 @@ export default function Login() {
     <>
     <div className="fakebody">
       <div className="logo-heading">
-        <img src={loginlogo} width={'20%'}></img>
-        <span>Unlock the Power of Conversations
-        </span>
+        <img src={loginlogo} className="loginlogo" width={'160px'}></img>
+        <img src={whatsapplogo} className="whatsapplogo" width={'300px'}></img>
       </div>
       { !registeropen?
-      (<div className="form-container">
+      (
+        <div className="form-outer">
+      <div className="form-container">
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="form-heading">
             Login
@@ -135,6 +137,7 @@ export default function Login() {
             Don't have an account?&nbsp;<Link onClick={gotoregister}>Create One.</Link>
           </span>
         </form>
+      </div>
       </div>):(
       <Register setregisteropen={setregisteropen}></Register>
       )
