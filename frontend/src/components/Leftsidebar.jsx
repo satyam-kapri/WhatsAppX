@@ -26,7 +26,7 @@ export default function Leftsidebar() {
     useEffect(()=>{
       
       if(currUserDetails){
-        console.log(currUserDetails);
+        
         setcurrentusername(currUserDetails.username);
         setcurrentprofilepic(currUserDetails.profileImage);
       }

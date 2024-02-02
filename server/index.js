@@ -19,7 +19,7 @@ require("dotenv").config();
 
 
 app.use(cors({
-  origin: 'http://192.168.141.45:3000',
+  origin: 'https://whatsappx.onrender.com',
   credentials: true,
 }));
 
@@ -49,7 +49,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://192.168.141.45:3000",
+    origin: "https://whatsappx.onrender.com",
     credentials: true,
   },
 });

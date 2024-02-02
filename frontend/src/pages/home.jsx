@@ -18,10 +18,10 @@ export default function Home() {
       setCurrUserDetails(res.data);
       }
       catch(err){
-      if(err.response && err.response.status===401){
+      // if(err.response && err.response.status===401)
        navigate("/login");
        
-      }
+      
       return;
     }
     
