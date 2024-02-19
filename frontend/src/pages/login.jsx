@@ -98,7 +98,7 @@ export default function Login() {
     <div className="fakebody">
       <div className="logo-heading">
         <img src={loginlogo} className="loginlogo" width={'160px'}></img>
-        <img src={whatsapplogo} className="whatsapplogo" width={'200px'}></img>
+        <img src={whatsapplogo} className="whatsapplogo" width={'300px'}></img>
       </div>
       { !registeropen?
       (
